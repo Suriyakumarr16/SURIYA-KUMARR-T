@@ -12,7 +12,7 @@ import com.baseClass.Baseclass;
 
 public class InvalidLoginPage extends Baseclass 
 {
-
+    //Defining Webelements
 	By Myaccount=By.xpath("//a[@class='dropdown-toggle']");
 	By login=By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[2]/a");
 	By Email=By.id("input-email");
@@ -22,7 +22,9 @@ public class InvalidLoginPage extends Baseclass
 	//loading the url
 	public void url() throws InterruptedException, IOException
 	{
+		//To launch the Chrome Browser
 		launchBrowser("chrome");
+		//To Provide Delay
 		Thread.sleep(5000);
 		website("http://opencart.abstracta.us/");
 		System.out.println(driver.getTitle());
@@ -34,6 +36,7 @@ public class InvalidLoginPage extends Baseclass
 
 		driver.findElement(Myaccount).click();
 		driver.findElement(login).click();
+		//To wait for the webpage to load
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 	}
@@ -44,6 +47,7 @@ public class InvalidLoginPage extends Baseclass
 		driver.findElement(By.xpath("//button[@id='details-button']")).click();
 		driver.findElement(By.xpath("//a[@class='small-link']")).click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		//entering invalid Details
 		driver.findElement(Email).sendKeys("tsuriyaku2marr@gmail.com");
 		driver.findElement(password).sendKeys("suriya1234");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -54,10 +58,13 @@ public class InvalidLoginPage extends Baseclass
 	{
 		WebElement l5=driver.findElement(loginbtn);
 		Actions a=new Actions(driver);
+		//To move the cursor to the Webelement l5
 		a.moveToElement(l5).click().perform();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		//To Take Screenshot
 		Screenshot("src\\test\\resources\\Screenshot\\invalid.png");
 		Thread.sleep(3000);
+		//To Close The Browser
 		driver.close();
 	}
 }

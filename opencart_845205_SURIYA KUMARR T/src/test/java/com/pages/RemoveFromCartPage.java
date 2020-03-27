@@ -5,13 +5,13 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import com.baseClass.Baseclass;
 
 public class RemoveFromCartPage extends Baseclass 
 {
+	//Defining Webelements
 	By Myaccount=By.xpath("//*[@id=\"top-links\"]/ul/li[2]/a/span[1]");
 	By login=By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[2]/a");
 	By Email=By.id("input-email");
@@ -21,12 +21,10 @@ public class RemoveFromCartPage extends Baseclass
 	By cart=By.xpath("//*[@id=\"top-links\"]/ul/li[4]/a/span");
 
 	//loading the URL
-	public void url() 
+	public void url() throws IOException 
 	{ 
-		System.setProperty("webdriver.chrome.driver",  "src\\test\\resources\\Driver\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		//To Launch Chrome Browser
+	    launchBrowser("chrome");
 		driver.get("http://opencart.abstracta.us/");
 		System.out.println(driver.getTitle());
 
@@ -39,6 +37,7 @@ public class RemoveFromCartPage extends Baseclass
 		WebElement link =driver.findElement(Myaccount); 
 		WebElement link2=driver.findElement(login);
 		Actions action = new Actions(driver);
+		//To hover the cursor to the Webelement Myaccount
 		action.moveToElement(link);
 		action.moveToElement(link2).click().perform();
 		driver.findElement(By.xpath("//button[@id='details-button']")).click();
@@ -57,10 +56,14 @@ public class RemoveFromCartPage extends Baseclass
 	//removing the item from the cart
 	public void remove() throws NullPointerException, IOException, InterruptedException
 	{
+		//To remove the item from the cart
 		driver.findElement(cancel).click();
+		//to wait for the webpage to load
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		//To Take Screenshot
 		Screenshot("src/test/resources/Screenshot/removecart.png");
 		Thread.sleep(3000);
+		//To close the Browser
 		driver.close();
 	}
 

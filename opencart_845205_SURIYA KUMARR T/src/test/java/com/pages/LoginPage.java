@@ -11,6 +11,7 @@ import com.baseClass.Baseclass;
 
 public class LoginPage extends Baseclass 
 {
+	//Defining Webelements
 	By MyAccount= By.xpath("//a[@class='dropdown-toggle']");
 	By Login=By.xpath("//*[@id='top-links']/ul/li[2]/ul/li[2]/a");
 	By Email=By.name("email");
@@ -20,7 +21,9 @@ public class LoginPage extends Baseclass
 	//loading the URL
 	public void url() throws InterruptedException, IOException
 	{
+		//To Launch the Chrome Browser
 		launchBrowser("chrome");
+		//To Provide Delay
 		Thread.sleep(5000);
 		website("http://opencart.abstracta.us/");
 		System.out.println(driver.getTitle());
@@ -31,6 +34,7 @@ public class LoginPage extends Baseclass
 	{
 		driver.findElement(MyAccount).click();
 		driver.findElement(Login).click();
+		//To wait for the webpage to load
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
@@ -50,8 +54,10 @@ public class LoginPage extends Baseclass
 	{
 		WebElement l5=driver.findElement(Submit);
 		Actions a=new Actions(driver);
+		//moving the cursor to the Webelement l5
 		a.moveToElement(l5).click().perform();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		//To Take Screenshot
 		Screenshot("src\\test\\resources\\Screenshot\\valid.png");
 		Thread.sleep(3000);
 		driver.close();

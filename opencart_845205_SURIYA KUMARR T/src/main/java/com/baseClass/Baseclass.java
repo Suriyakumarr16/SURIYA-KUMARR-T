@@ -32,10 +32,12 @@ public class Baseclass {
 			System.setProperty("webdriver.gecko.driver", "src\\test\\resources\\Driver\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
-
+       //To maximize the window
 		driver.manage().window().maximize();
+		//to delete all the cookies
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+		//To wait for the webpage to load
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
 	}

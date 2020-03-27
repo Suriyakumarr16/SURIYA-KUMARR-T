@@ -50,28 +50,28 @@ formatter.match({
   "location": "LoginStepDefinition.the_Opencart_application_opens_in_chrome_browser()"
 });
 formatter.result({
-  "duration": 20875422600,
+  "duration": 18346624000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.the_user_clicks_on_the_login()"
 });
 formatter.result({
-  "duration": 1065125300,
+  "duration": 908622900,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.the_user_fills_all_the_valid_details()"
 });
 formatter.result({
-  "duration": 6086640900,
+  "duration": 4940825800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.the_user_clicks_on_the_login_button()"
 });
 formatter.result({
-  "duration": 4314145100,
+  "duration": 4494392200,
   "status": "passed"
 });
 formatter.scenario({
@@ -112,28 +112,28 @@ formatter.match({
   "location": "InvalidLoginStepDefinition.the_application_will_open_in_chrome_browser()"
 });
 formatter.result({
-  "duration": 20039541800,
+  "duration": 17745902500,
   "status": "passed"
 });
 formatter.match({
   "location": "InvalidLoginStepDefinition.the_user_clicks_on_login()"
 });
 formatter.result({
-  "duration": 951345500,
+  "duration": 805373900,
   "status": "passed"
 });
 formatter.match({
   "location": "InvalidLoginStepDefinition.the_user_tries_to_login_with_invalid_details()"
 });
 formatter.result({
-  "duration": 5547244700,
+  "duration": 7979386300,
   "status": "passed"
 });
 formatter.match({
   "location": "InvalidLoginStepDefinition.the_user_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 4231126600,
+  "duration": 5000552700,
   "status": "passed"
 });
 formatter.scenario({
@@ -174,28 +174,28 @@ formatter.match({
   "location": "AddToCartStepDefinition.the_url_opens_in_Chrome_application()"
 });
 formatter.result({
-  "duration": 18078957800,
+  "duration": 13137948800,
   "status": "passed"
 });
 formatter.match({
   "location": "AddToCartStepDefinition.the_user_clicks_on_loginbutton()"
 });
 formatter.result({
-  "duration": 21210191700,
+  "duration": 20741077800,
   "status": "passed"
 });
 formatter.match({
   "location": "AddToCartStepDefinition.the_user_selects_the_product()"
 });
 formatter.result({
-  "duration": 4860838800,
+  "duration": 1437516500,
   "status": "passed"
 });
 formatter.match({
   "location": "AddToCartStepDefinition.clicks_on_add_to_cart()"
 });
 formatter.result({
-  "duration": 3548375300,
+  "duration": 3600497300,
   "status": "passed"
 });
 formatter.scenario({
@@ -236,28 +236,28 @@ formatter.match({
   "location": "CartCheckingStepDefinition.url_opens_in_Chrome_browser()"
 });
 formatter.result({
-  "duration": 18005890700,
+  "duration": 14881354300,
   "status": "passed"
 });
 formatter.match({
   "location": "CartCheckingStepDefinition.the_user_clicks_on_loginbutton_and_logs_in()"
 });
 formatter.result({
-  "duration": 9818864100,
+  "duration": 8059650300,
   "status": "passed"
 });
 formatter.match({
   "location": "CartCheckingStepDefinition.the_user_clicks_the_cart()"
 });
 formatter.result({
-  "duration": 2788857300,
+  "duration": 671908500,
   "status": "passed"
 });
 formatter.match({
   "location": "CartCheckingStepDefinition.confirms_the_product_we_added_is_present_or_not()"
 });
 formatter.result({
-  "duration": 7009576400,
+  "duration": 7994240500,
   "status": "passed"
 });
 formatter.scenario({
@@ -298,28 +298,28 @@ formatter.match({
   "location": "RemovefromCartStepDefinition.the_url_opens_in_the_chrome_browser()"
 });
 formatter.result({
-  "duration": 27677559300,
+  "duration": 28580269700,
   "status": "passed"
 });
 formatter.match({
   "location": "RemovefromCartStepDefinition.the_user_logs_in_to_the_opencart()"
 });
 formatter.result({
-  "duration": 13431230200,
+  "duration": 10318072900,
   "status": "passed"
 });
 formatter.match({
   "location": "RemovefromCartStepDefinition.user_clicks_the_cart_option()"
 });
 formatter.result({
-  "duration": 3521848600,
+  "duration": 903482000,
   "status": "passed"
 });
 formatter.match({
   "location": "RemovefromCartStepDefinition.clicks_on_remove()"
 });
 formatter.result({
-  "duration": 5003915900,
+  "duration": 3859405900,
   "status": "passed"
 });
 });
